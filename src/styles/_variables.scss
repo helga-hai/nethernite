@@ -1,0 +1,67 @@
+$bg-layout: #323145;
+$bg-dark-elems: #242333;
+$bg-pagination: rgba(36,35,51,.8);
+$bg-news-title: rgba(36,35,51,.9);
+
+$active-border: linear-gradient(to right, #ff905a, #d94fc7); //$user-elipse
+$active-border-comment: linear-gradient(to right, #d94fc7, #ff905a);
+$active-bg: linear-gradient(to bottom, #252434 37%, #323145);
+$oval-gradient:  linear-gradient(to right, #3c3b53, #242333);
+$oval-border:#242333;
+$oval-outline: linear-gradient(0deg, #9d9acc, #6f6d99);
+$shadow: 0 15px 11px rgba(9,10,15,.15);
+$money:linear-gradient(to right, #6d30c8, #d94fc7);
+$user-gradient: linear-gradient(to right, #242333, #3c3b53);
+$user-outline: linear-gradient(to right, #9d9acc, #6f6d99);
+
+$dot-pink-gradient: linear-gradient(45deg, #d94fc7, #6d30c8);
+$dot-green-gradient: linear-gradient(45deg, #57b9c9, #3deb6e);
+
+$degault-txt:14px;
+$news-title: 18px;
+$h1-font: 22px;
+$page-font:16px;
+
+$mainColor: #ffffff;
+$textColor: #9d9acc;
+$subTextColor: rgba(156, 153, 203, 0.5);
+
+$screen-xxs-max: 435px;
+$screen-xs-max: 576px;
+$screen-sm-max: 768px;
+$screen-md-max: 992px;
+$screen-lg-max: 1200px;
+
+// Extra Small devices
+@mixin xxs {
+    @media (max-width: #{$screen-xxs-max}) {
+        @content;
+    }
+ }
+// Small devices
+@mixin xs {
+    @media (max-width: #{$screen-xs-max}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin sm {
+    @media (max-width: #{$screen-sm-max}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin md {
+    @media (max-width: #{$screen-md-max}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin lg {
+    @media (max-width: #{$screen-lg-max}) {
+        @content;
+    }
+ }
